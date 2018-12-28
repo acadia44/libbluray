@@ -394,6 +394,7 @@ static void *_load_jvm(const char **p_java_home)
     static const char * const jvm_path[] = {NULL,
                                             JDK_HOME,
                                             "/usr/lib/jvm/default-java",
+                                            "/home/osmc/BD-J",
                                             "/usr/lib/jvm/default",
                                             "/usr/lib/jvm/",
                                             "/etc/java-config-2/current-system-vm",
@@ -499,6 +500,7 @@ static char *_find_libbluray_jar0()
     static const char * const jar_paths[] = {
 #ifndef _WIN32
         "/usr/share/java/" BDJ_JARFILE,
+        "/home/osmc/BD-J/" BDJ_JARFILE,
         "/usr/share/libbluray/lib/" BDJ_JARFILE,
 #endif
         BDJ_JARFILE,
